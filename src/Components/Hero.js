@@ -51,9 +51,9 @@ const Hero = () => {
           </svg>
         </div>
       </div>
-      <div className="sub-text">
-        <div className="sub-text-holder">
-          <p className="subheading">
+      <div className="sub-text1">
+        <div className="sub-text-holder1">
+          <p className="sub-heading-1">
             Welcome to Live Space, a full-service architecture and interior
             design firm. We specialize in creating beautiful, functional spaces
             that reflect your unique style and personality. Let us help you

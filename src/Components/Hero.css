@@ -12,7 +12,7 @@
     padding: 1rem;
   }
 
-  .subheading {
+  .sub-heading-1 {
     width: auto;
     font-family: Inter;
     height: auto;
@@ -39,13 +39,13 @@
     display: none;
   }
 
-  .sub-text {
+  .sub-text1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .sub-text-holder {
+  .sub-text-holder1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,7 @@
     text-align: left;
   }
 
-  .subheading {
+  .sub-heading-1 {
     margin-left: 36rem;
     width: 45rem;
     height: 6.5rem;
@@ -110,13 +110,13 @@
     margin-left: 64vh;
   }
 
-  .sub-text {
+  .sub-text1 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
   }
 
-  .sub-text-holder {
+  .sub-text-holder1 {
     margin-right: 4rem;
   }
 
