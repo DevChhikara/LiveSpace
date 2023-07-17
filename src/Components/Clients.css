@@ -73,11 +73,11 @@
   .client-main-text {
     color: var(--black, #202020);
     font-family: Hanken Grotesk;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    line-height: 7.5rem;
     margin-right: 3rem;
+    line-height: 1.2;
   }
 }
