@@ -1,6 +1,36 @@
 import React from "react";
+import { useState } from "react";
 import "./Clients.css";
+const reviews = [
+  {
+    id: 1,
+    text: "I hired LiveSpace to design and build my dream home, and I could not be happier with the result. From the initial consultation to the final walk-through, the LiveSpace team was professional, attentive, and a pleasure to work with. They took the time to listen to my needs and preferences, and they brought their expertise to the table to create a home that is not only beautiful but also functional and sustainable. I was especially impressed by their attention to detail and their ability to incorporate unique design elements that truly make my home one of a kind. I highly recommend Archies for anyone who is looking for a top-notch architecture and design firm.",
+    name: "Dereck Lawson",
+  },
+  {
+    id: 2,
+    text: "I hired LiveSpace to handle the plumbing and electrical work in my home renovation, and I must say they exceeded all my expectations. From the outset, the team displayed a high level of professionalism and expertise in their field. They carefully assessed the existing systems and proposed efficient and cost-effective solutions to address my needs. Not only did they complete the project on time, but they also maintained excellent communication and kept me informed at every step. Their friendly and approachable attitude made the entire experience smooth and stress-free.",
+    name: "Mark Lewis",
+  },
+  {
+    id: 3,
+    text: "When it came to enhancing the security of my property, I turned to LiveSpace for their expertise in security and camera installation. They proved to be an exceptional choice from start to finish. Their knowledgeable team conducted a thorough assessment of my property's security needs and designed a tailored plan to address potential vulnerabilities. Throughout the installation process, LiveSpace exhibited a high level of professionalism and attention to detail. They meticulously installed state-of-the-art security cameras and systems, providing me with peace of mind and confidence in the safety of my home.",
+    name: "Michael Thompson",
+  },
+  // Add more reviews here
+];
 const Clients = () => {
+  const [activeReview, setActiveReview] = useState(0);
+
+  const handleNext = () => {
+    setActiveReview((prevIndex) => (prevIndex + 1) % reviews.length);
+  };
+
+  const handlePrev = () => {
+    setActiveReview((prevIndex) =>
+      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+    );
+  };
   return (
     <div className="client-main-page">
       <div className="horizontal-ruler"></div>
@@ -20,27 +50,22 @@ const Clients = () => {
         <p className="client-main-text">What Our Clients Are Saying</p>
       </div>
       <div className="horizontal-ruler"></div>
-      <div className="client-text-box">
-        <div className="client-text-box-photo"></div>
-        <div className="client-text-box-content">
-          <p className="client-text-heading">
-            I hired Archies to design and build my dream home, and I could not
-            be happier with the result.
-          </p>
-          <p className="client-text-subheading">
-            From the initial consultation to the final walk-through, the Archies
-            team was professional, attentive, and a pleasure to work with. They
-            took the time to listen to my needs and preferences, and they
-            brought their expertise to the table to create a home that is not
-            only beautiful but also functional and sustainable. I was especially
-            impressed by their attention to detail and their ability to
-            incorporate unique design elements that truly make my home one of a
-            kind. I highly recommend Archies for anyone who is looking for a
-            top-notch architecture and design firm
-          </p>
-          <p className="client-text-name">Dereck Lawson</p>
+      <div className="customer-review-carousel">
+        <div className="client-text-box">
+          <div className="client-text-box-photo"></div>
+          <div className="client-text-box-content">
+            <p className="client-text-subheading">
+              {reviews[activeReview].text}
+            </p>
+            <p className="client-text-name">{reviews[activeReview].name}</p>
+          </div>
+        </div>
+        <div className="carousel-navigation">
+          <button onClick={handlePrev}>Previous</button>
+          <button onClick={handleNext}>Next</button>
         </div>
       </div>
+      <div className="horizontal-ruler"></div>
     </div>
   );
 };

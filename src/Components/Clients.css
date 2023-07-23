@@ -63,6 +63,14 @@
   font-weight: 500;
   line-height: 1.875rem;
 }
+.carousel-navigation button {
+  font-size: 2rem;
+}
+.carousel-navigation {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
 @media screen and (max-width: 900px) {
   .client-text-box-photo {
     display: none;
