@@ -7,6 +7,9 @@
   --green: #white;
   --border: 1px solid #e6e6e6;
 }
+.contact-map {
+  display: flex;
+}
 .contact-us-contact-info {
   color: white;
   font-family: Hanken Grotesk;
@@ -70,7 +73,7 @@
   color: #333;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5rem;
 }
 
 .second-container form {
@@ -92,7 +95,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  border: var(--border);
+  border: none;
   font-size: 16px;
   color: #333;
   text-transform: uppercase;
@@ -100,14 +103,35 @@
 }
 
 .second-container form .form-group:first-of-type input {
-  width: 50.1%;
+  width: 90%;
   margin-right: -2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
 }
-
+.second-container form .form-group input {
+  width: 90%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+.second-container form .form-group textarea {
+  width: 90%;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 3rem;
+}
 .second-container form input {
   width: 100%;
   font-size: 15px;
   margin-top: -2px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
 }
 .second-container form .form-group {
   width: 100%;
@@ -127,7 +151,9 @@
 }
 
 .second-container form button {
-  width: 400px;
+  border-radius: 1.875rem;
+  border: 1px solid var(--grey, #636363);
+  width: 20rem;
   height: 50px;
   background: #333;
   color: var(--white);
@@ -138,7 +164,7 @@
   position: relative;
   left: calc(50% - 100px);
   cursor: pointer;
-  margin-right: 12.5rem;
+  margin-right: 9.5rem;
 }
 
 .second-container form button:hover {
@@ -146,6 +172,20 @@
 }
 
 @media screen and (max-width: 800px) {
+  .second-container form button {
+    width: 20rem;
+    height: 50px;
+    background: #333;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    position: relative;
+    left: calc(50% - 100px);
+    cursor: pointer;
+    margin-right: 0rem;
+  }
   .contact-form {
     width: 80vw;
   }
@@ -163,6 +203,20 @@
 }
 
 @media screen and (max-width: 700px) {
+  .second-container form button {
+    width: 15rem;
+    height: 50px;
+    background: #333;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    position: relative;
+    left: calc(50% - 100px);
+    cursor: pointer;
+    margin-right: 5rem;
+  }
   .contact-form {
     flex-direction: column-reverse;
   }
@@ -179,6 +233,9 @@
     margin-right: 0rem;
   }
   .first-container {
+    margin-left: 2rem;
+  }
+  .second-container {
     margin-left: 2rem;
   }
 }

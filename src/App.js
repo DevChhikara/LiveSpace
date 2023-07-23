@@ -6,7 +6,7 @@ import About from "./pages/About";
 function App() {
   return (
     <div>
-      {/* <ContactUs></ContactUs> */}
+      <ContactUs></ContactUs>
       <Home></Home>
       {/* <About /> */}
     </div>

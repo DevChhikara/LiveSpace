@@ -110,7 +110,7 @@
 
 @media screen and (max-width: 1200px) {
   .footer-main-box {
-    width: fit-content;
+    width: 100%;
     padding-top: 10rem;
     padding-bottom: 10rem;
     display: block;
@@ -119,7 +119,6 @@
 
   .footer-links-heading {
     font-size: 1rem;
-
   }
 
   .footer-links-subheading {

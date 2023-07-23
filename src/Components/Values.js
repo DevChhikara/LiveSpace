@@ -88,7 +88,7 @@ const Values = () => {
               fill="#636363"
             />
           </svg>
-          <p>Timeless Design</p>
+          <p>Affordable Price</p>
         </div>
         <div className="value-holder  down-svg">
           <svg

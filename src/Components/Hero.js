@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero-bg">
       <div className="tagline">
-        <h1 className="heading">Transforming Spaces into Works of Art</h1>
+        <h1 className="heading">Transforming Spaces, Transforming Lives</h1>
         <div className="social-media">
           <svg
             xmlns="http://www.w3.org/2000/svg"

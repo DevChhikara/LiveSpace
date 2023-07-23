@@ -15,8 +15,8 @@ const Footer = () => {
             <p className="footer-links-heading">Quick Links</p>
             <p className="footer-links-subheading">About Us</p>
             <p className="footer-links-subheading">Services</p>
-            <p className="footer-links-subheading">Portfolio</p>
-            {/* <p className="footer-links-subheading">Testimonials</p> */}
+            {/* <p className="footer-links-subheading">Portfolio</p> */}
+            <p className="footer-links-subheading">Testimonials</p>
             {/* <p className="footer-links-subheading">Blog</p> */}
             {/* <p className="footer-links-subheading">Contact Us</p> */}
             {/* <p className="footer-links-subheading">FAQ</p> */}
